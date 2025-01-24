@@ -2,6 +2,6 @@ package be.vdab.theorie;
 
 public enum Motor {
 
-    //test 1-2
+    //test 1-2-3
 
 }
