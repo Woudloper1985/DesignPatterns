@@ -1,4 +1,4 @@
-package be.vdab.theorie;
+package be.vdab.theorie.singleton.motor_versnellingsbak;
 
 public enum Motor {
     INSTANCE;

@@ -1,9 +1,9 @@
-package be.vdab.theorie;
+package be.vdab.theorie.singleton.motor_versnellingsbak;
 
 public class MotorMain {
     public static void main(String[] args) {
         Motor.INSTANCE.start();
-        stopDeAuto(); // zie die method hieronder.
+        stopDeAuto(); // zie de method onderaan.
 
         try {
             Versnellingsbak.INSTANCE.hoger();
