@@ -41,4 +41,3 @@ public enum Magic8Ball {
         vorigAntwoord = antwoord;
         }
     }
-
