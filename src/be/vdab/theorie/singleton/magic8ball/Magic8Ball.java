@@ -29,7 +29,7 @@ public enum Magic8Ball {
     private String vorigAntwoord = "";
 
     void geefAntwoord(String vraag) {
-        var random = new Random(); // maak een nieuwe randomgenerator
+        var random = new Random(); // maak een nieuwe random-generator
         var randomIndex = random.nextInt(antwoordopties.length); // Trek een willekeurige index uit de array
         var antwoord = antwoordopties[randomIndex];
 
