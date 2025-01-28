@@ -1,4 +1,4 @@
-package be.vdab.theorie.simple_factory;
+package be.vdab.theorie.simple_factory.kerstman;
 
 class CadeauMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package be.vdab.theorie.simple_factory;
+package be.vdab.theorie.simple_factory.kerstman;
 
 class Gezelschapsspel extends Cadeau {
 
