@@ -1,4 +1,4 @@
-package be.vdab.theorie.façade;
+package be.vdab.theorie.facade.lening;
 
 import java.util.ArrayList;
 import java.util.List;
