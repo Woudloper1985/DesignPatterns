@@ -5,7 +5,12 @@ import java.util.Scanner;
 public class Magic8BallMain {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
-        System.out.println("Stel een vraag: ");
-        Magic8Ball.INSTANCE.geefAntwoord(scanner.nextLine());
+        String vraag;
+
+        do {
+            System.out.println("Stel een vraag (typ \"stop\" om te stoppen):");
+            vraag = scanner.nextLine();
+            Magic8Ball.INSTANCE.geefAntwoord(vraag);
+        } while (!vraag.equals("stop"));
     }
 }
