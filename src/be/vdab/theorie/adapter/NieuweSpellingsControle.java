@@ -7,7 +7,7 @@ public class NieuweSpellingsControle {
     public NieuweSpellingsControle(String taal, String tekst) {
     }
 
-    String[] geefFouten() {
-        //fout in de code is normaal: hier is niks gecodeerd, is enkel een voorbeeld
-    }
+    //String[] geefFouten() {}
+    //fout in de code is normaal: hier is niks gecodeerd, is enkel een voorbeeld
 }
+

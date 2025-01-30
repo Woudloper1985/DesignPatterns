@@ -5,8 +5,9 @@ public class Main {
         var controle = new SpellingsControleAdapter();
         controle.setTaal("nl");
         controle.setTekst("Ik kom onmidelijk met een paralelogram.");
-        for (var fout : controle.controleerSpellingEnGeefFouten()){
-            System.out.println(fout);
-        }
+        /*for (var fout : controle.controleerSpellingEnGeefFouten()){
+             System.out.println(fout);
+           } */
+
     }
 }

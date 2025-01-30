@@ -12,8 +12,8 @@ public class SpellingsControleAdapter {
         this.tekst = tekst;
     }
 
-    String[] controleerSpellingEnGeefFouten(){
+    /*String[] controleerSpellingEnGeefFouten(){
         return new NieuweSpellingsControle(taal, tekst).geefFouten();
-    }
+    }*/
 
 }

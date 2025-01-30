@@ -12,7 +12,7 @@ public class OudeSpellingsControle {
         this.tekst = tekst;
     }
 
-    public String[] controleerSpellingEnGeefFouten() {
+    /*public String[] controleerSpellingEnGeefFouten() {
         //fout in de code is normaal: hier is niks gecodeerd, is enkel een voorbeeld
-    }
+    }*/
 }
