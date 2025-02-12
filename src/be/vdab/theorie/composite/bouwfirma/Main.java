@@ -21,12 +21,12 @@ public class Main {
 
 /*
 var tekening = new Tekening();
-        tekening.addKost(new Rechthoek(2,1));
-        tekening.addKost(new Cirkel(3));
+        tekening.add(new Rechthoek(2,1));
+        tekening.add(new Cirkel(3));
 var subTekening = new Tekening();
-        subTekening.addKost(new Rechthoek(3,2));
-        subTekening.addKost(new Cirkel(4));
-        tekening.addKost(subTekening);
+        subTekening.add(new Rechthoek(3,2));
+        subTekening.add(new Cirkel(4));
+        tekening.add(subTekening);
         System.out.println(tekening.getOppervlakte());
         }
         }*/
