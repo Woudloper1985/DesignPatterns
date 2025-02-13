@@ -7,21 +7,21 @@ import java.nio.file.Path;
 public class Main {
     public static void main(String[] args) {
 
-    /*Dier maak(Character teken) {
+        var vulkaan = new Vulkaan();
+
         try (var reader = Files.newBufferedReader(Path.of("inwoners.txt"))) {
             for (String regel = reader.readLine(); regel != null; regel = reader.readLine()) {
                 char soort = regel.charAt(0);
                 String naam = regel.substring(2);
-            };
+                var Inwoner = InwonerFactory.INSTANCE.maak(soort, naam);
+                Eiland.INSTANCE.voegInwonerToe(Inwoner);
+                vulkaan.addObserver(Inwoner);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-    } catch (
-    IOException e) {
-        e.printStackTrace();
-    }
-        return switch (soort) {
-        case 'V' -> new Vogel(naam);
-        case 'Z' -> new Zoogdier(naam);;
-    }
-}*/
+
+       Eiland.INSTANCE.getInwoners();
+   //vulkaan.barstUit();
     }
 }
