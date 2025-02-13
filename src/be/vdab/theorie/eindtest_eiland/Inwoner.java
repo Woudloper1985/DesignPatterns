@@ -25,11 +25,11 @@ public abstract class Inwoner implements Observer {
 
     @Override
     public void barstUit(Vulkaan vulkaan) {
-        barstUitReactie.reageer(this, vulkaan);
+        barstUitReactie.reageer(this);
     }
 
     @Override
     public void stopt(Vulkaan vulkaan) {
-        stoptReactie.reageer(this, vulkaan);
+        stoptReactie.reageer(this);
     }
 }

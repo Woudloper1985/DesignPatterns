@@ -33,6 +33,6 @@ public enum Eiland {
     //Onderstaande wordt ook niet gevraagd in de opdracht:
     public void toonInwoners() {
         System.out.println("\nDe huidige inwoners van het eiland: \n");
-        inwoners.forEach(inwoner -> System.out.println(inwoner.getSoort() + ' ' + inwoner.getNaam()));
+        inwoners.forEach(inwoner -> System.out.println("\t" + inwoner.getSoort() + ' ' + inwoner.getNaam()));
     }
 }

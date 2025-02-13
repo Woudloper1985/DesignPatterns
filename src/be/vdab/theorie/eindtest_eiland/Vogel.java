@@ -5,14 +5,14 @@ public class Vogel extends Inwoner {
         super(naam);
         setBarstUitReactie(new Reactie() {
             @Override
-            public void reageer(Inwoner inwoner, Vulkaan vulkaan) {
-                System.out.println("Vogel " + inwoner.getNaam() + " vliegt hogerop.");
+            public void reageer(Inwoner inwoner) {
+                System.out.println("\tVogel " + inwoner.getNaam() + " vliegt hogerop.");
             }
         });
         setStoptReactie(new Reactie() {
             @Override
-            public void reageer(Inwoner inwoner, Vulkaan vulkaan) {
-                System.out.println("Vogel " + inwoner.getNaam() + " keert terug naar zijn nest.");
+            public void reageer(Inwoner inwoner) {
+                System.out.println("\tVogel " + inwoner.getNaam() + " vliegt terug lager.");
             }
         });
     }

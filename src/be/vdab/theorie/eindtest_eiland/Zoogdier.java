@@ -5,14 +5,14 @@ public class Zoogdier extends Inwoner {
         super(naam);
         setBarstUitReactie(new Reactie() {
             @Override
-            public void reageer(Inwoner inwoner, Vulkaan vulkaan) {
-                System.out.println("Zoogdier " + inwoner.getNaam() + " schuilt in zijn/haar hol.");
+            public void reageer(Inwoner inwoner) {
+                System.out.println("\tZoogdier " + inwoner.getNaam() + " schuilt in zijn/haar hol.");
             }
         });
         setStoptReactie(new Reactie() {
             @Override
-            public void reageer(Inwoner inwoner, Vulkaan vulkaan) {
-                System.out.println("Zoogdier " + inwoner.getNaam() + " komt weer tevoorschijn.");
+            public void reageer(Inwoner inwoner) {
+                System.out.println("\tZoogdier " + inwoner.getNaam() + " komt weer tevoorschijn.");
             }
         });
     }
