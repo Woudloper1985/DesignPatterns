@@ -10,5 +10,5 @@ public abstract class Inwoner implements Observer {
     protected String getNaam() {
         return naam;
     }
-
+//TEST
 }
