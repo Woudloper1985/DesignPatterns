@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         var eiland = Eiland.INSTANCE;
+        var vulkaan = eiland.getVulkaan();
 
         try (var reader = Files.newBufferedReader(Path.of("inwoners.txt"))) {
             for (String regel = reader.readLine(); regel != null; regel = reader.readLine()) {
@@ -19,8 +20,8 @@ public class Main {
             e.printStackTrace();
         }
 
-        //Eiland.INSTANCE.toonInwoners();
-        eiland.getVulkaan().barstUit();
-        eiland.getVulkaan().stopt();
+        eiland.toonInwoners();
+        vulkaan.barstUit();
+        vulkaan.stopt();
     }
 }

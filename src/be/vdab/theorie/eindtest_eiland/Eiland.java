@@ -10,8 +10,8 @@ public enum Eiland {
     private final Vulkaan vulkaan;
 
     Eiland() {
-        vulkaan = new Vulkaan();
         inwoners = new ArrayList<>();
+        vulkaan = new Vulkaan();
     }
 
     public void voegInwonerToe(Inwoner inwoner) {
@@ -19,8 +19,7 @@ public enum Eiland {
         vulkaan.addObserver(inwoner);
     }
 
-    /*Je zou ook een remover kunnen schrijven voor inwoners
-    (één per één of de lijst terug volledig leegmaken), maar dat wordt niet gevraagd.*/
+    //Je zou ook een remover kunnen schrijven voor inwoners, maar dat wordt niet gevraagd.
 
     public List<Inwoner> getInwoners() {
         return inwoners;
@@ -30,9 +29,9 @@ public enum Eiland {
         return vulkaan;
     }
 
-    //Onderstaande wordt ook niet gevraagd in de opdracht:
+    //(Wordt niet gevraagd in de opdracht:)
     public void toonInwoners() {
-        System.out.println("\nDe huidige inwoners van het eiland: \n");
-        inwoners.forEach(inwoner -> System.out.println("\t" + inwoner.getSoort() + ' ' + inwoner.getNaam()));
+        System.out.println("\nDe huidige inwoners: ");
+        inwoners.forEach(inwoner -> System.out.println("\t" + inwoner.getSoort() + " " + inwoner.getNaam()));
     }
 }

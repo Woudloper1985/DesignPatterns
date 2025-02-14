@@ -4,33 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Vulkaan {
-    private final List<be.vdab.theorie.eindtest_eiland.Observer> observers = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
     private boolean isUitbarstend;
 
-    void addObserver(Observer observer) {
+    public void addObserver(Observer observer) {
         observers.add(observer);
     }
 
-    /*je kan een removeObserver maken, maar lijkt me niet wenselijk zonder de inwoner te verwijderen*/
-
+    // Je kan een removeObserver maken, maar lijkt me niet wenselijk zonder ook de inwoner te verwijderen.
 
     void notifyObservers() {
         if (isUitbarstend) {
-            observers.forEach(observer -> observer.barstUit(this));
+            observers.forEach(Observer::barstUit);
         } else {
-            observers.forEach(observer -> observer.stopt(this));
+            observers.forEach(Observer::stopt);
         }
     }
 
     public void barstUit() {
         isUitbarstend = true;
-        System.out.println("\nDE VULKAAN BARST UIT!\n");
+        System.out.println("\nDE VULKAAN BARST UIT!");
         notifyObservers();
     }
 
     public void stopt() {
         isUitbarstend = false;
-        System.out.println("\nDe vulkaan is gestopt met uitbarsten:\n");
+        System.out.println("\nDe vulkaan is gestopt met uitbarsten:");
         notifyObservers();
     }
 }

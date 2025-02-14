@@ -2,34 +2,32 @@ package be.vdab.theorie.eindtest_eiland;
 
 public abstract class Inwoner implements Observer {
     private final String naam;
-    private Reactie barstUitReactie;
-    private Reactie stoptReactie;
+    private final String soort;
+    private final Reactie reactieBijUitbarsting;
+    private final Reactie reactieBijStoppen;
 
-    protected Inwoner(String naam) {
+    public Inwoner(String naam, String soort, Reactie reactieBijUitbarsting, Reactie reactieBijStoppen) {
         this.naam = naam;
-    }
-
-    public void setBarstUitReactie(Reactie reactie) {
-        this.barstUitReactie = reactie;
-    }
-
-    public void setStoptReactie(Reactie reactie) {
-        this.stoptReactie = reactie;
+        this.soort = soort;
+        this.reactieBijUitbarsting = reactieBijUitbarsting;
+        this.reactieBijStoppen = reactieBijStoppen;
     }
 
     public String getNaam() {
         return naam;
     }
 
-    public abstract String getSoort();
-
-    @Override
-    public void barstUit(Vulkaan vulkaan) {
-        barstUitReactie.reageer(this);
+    public String getSoort() {
+        return soort;
     }
 
     @Override
-    public void stopt(Vulkaan vulkaan) {
-        stoptReactie.reageer(this);
+    public void barstUit() {
+        reactieBijUitbarsting.reageer();
+    }
+
+    @Override
+    public void stopt() {
+        reactieBijStoppen.reageer();
     }
 }
