@@ -15,9 +15,9 @@ public class Vulkaan {
 
     void notifyObservers() {
         if (isUitbarstend) {
-            observers.forEach(Observer::barstUit);
+            observers.forEach(Observer::reageerOpUitbarsting);
         } else {
-            observers.forEach(Observer::stopt);
+            observers.forEach(Observer::reageerOpStoppen);
         }
     }
 

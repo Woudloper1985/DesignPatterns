@@ -19,7 +19,7 @@ public enum Eiland {
         vulkaan.addObserver(inwoner);
     }
 
-    //Je zou ook een remover kunnen schrijven voor inwoners, maar dat wordt niet gevraagd.
+    //Je kan ook een remover schrijven voor inwoners, maar dat wordt niet gevraagd.
 
     public List<Inwoner> getInwoners() {
         return inwoners;
@@ -29,7 +29,7 @@ public enum Eiland {
         return vulkaan;
     }
 
-    //(Wordt niet gevraagd in de opdracht:)
+    //(Wordt ook niet gevraagd:)
     public void toonInwoners() {
         System.out.println("\nDe huidige inwoners: ");
         inwoners.forEach(inwoner -> System.out.println("\t" + inwoner.getSoort() + " " + inwoner.getNaam()));

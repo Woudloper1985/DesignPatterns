@@ -3,14 +3,14 @@ package be.vdab.theorie.eindtest_eiland;
 public abstract class Inwoner implements Observer {
     private final String naam;
     private final String soort;
-    private final Reactie reactieBijUitbarsting;
-    private final Reactie reactieBijStoppen;
+    private final Reactie bijUitbarsting;
+    private final Reactie bijStoppen;
 
-    public Inwoner(String naam, String soort, Reactie reactieBijUitbarsting, Reactie reactieBijStoppen) {
+    public Inwoner(String naam, String soort, Reactie bijUitbarsting, Reactie bijStoppen) {
         this.naam = naam;
         this.soort = soort;
-        this.reactieBijUitbarsting = reactieBijUitbarsting;
-        this.reactieBijStoppen = reactieBijStoppen;
+        this.bijUitbarsting = bijUitbarsting;
+        this.bijStoppen = bijStoppen;
     }
 
     public String getNaam() {
@@ -21,13 +21,21 @@ public abstract class Inwoner implements Observer {
         return soort;
     }
 
-    @Override
-    public void barstUit() {
-        reactieBijUitbarsting.reageer();
+    public Reactie getReactieBijUitbarsting() {
+        return bijUitbarsting;
+    }
+
+    public Reactie getBijStoppen() {
+        return bijStoppen;
     }
 
     @Override
-    public void stopt() {
-        reactieBijStoppen.reageer();
+    public void reageerOpUitbarsting() {
+        bijUitbarsting.reageer();
+    }
+
+    @Override
+    public void reageerOpStoppen() {
+        bijStoppen.reageer();
     }
 }
