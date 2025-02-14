@@ -11,7 +11,7 @@ public class Vulkaan {
         observers.add(observer);
     }
 
-    // Je kan een removeObserver maken, maar lijkt me niet wenselijk zonder ook de inwoner te verwijderen.
+// Je kan een removeObserver maken, maar lijkt me niet wenselijk zonder ook de inwoner te verwijderen.
 
     void notifyObservers() {
         if (isUitbarstend) {

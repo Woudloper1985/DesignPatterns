@@ -23,5 +23,6 @@ public class Main {
         eiland.toonInwoners();
         vulkaan.barstUit();
         vulkaan.stopt();
+
     }
 }
