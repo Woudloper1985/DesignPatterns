@@ -20,7 +20,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        eiland.toonInwoners();
+        //eiland.toonInwoners();
         vulkaan.barstUit();
         vulkaan.stopt();
     }

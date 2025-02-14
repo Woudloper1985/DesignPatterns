@@ -1,10 +1,24 @@
 package be.vdab.theorie.eindtest_eiland;
 
-public class Zoogdier extends Inwoner {
-    public Zoogdier(String naam) {
-        super(naam, "Zoogdier",
-                () -> System.out.println("\t" + naam + " het zoogdier verstopt zich in zijn/haar hol."),
-                () -> System.out.println("\t" + naam + " het zoogdier komt terug uit zijn/haar hol.")
-        );
+public class Zoogdier extends InwonerDecorator {
+    public Zoogdier(Inwoner inwoner) {
+        super(inwoner);
+    }
+
+    @Override
+    public void reageerOpUitbarsting() {
+        System.out.println("\t" + getNaam() + " het zoogdier verstopt zich in zijn/haar hol.");
+        //super.reageerOpUitbarsting();
+    }
+
+    @Override
+    public void reageerOpStoppen() {
+        System.out.println("\t" + getNaam() + " het zoogdier komt terug uit zijn/haar hol.");
+        //super.reageerOpStoppen();
+    }
+
+    @Override
+    public String getSoort() {
+        return "Zoogdier";
     }
 }
