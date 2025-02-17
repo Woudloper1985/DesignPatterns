@@ -8,14 +8,4 @@ public abstract class InwonerDecorator extends Inwoner {
                 soortInwoner.getReactieBijUitbarsting(), soortInwoner.getBijStoppen());
         this.soortInwoner = soortInwoner;
     }
-
-    @Override
-    public void reageerOpUitbarsting() {
-        soortInwoner.reageerOpUitbarsting();
-    }
-
-    @Override
-    public void reageerOpStoppen() {
-        soortInwoner.reageerOpStoppen();
-    }
 }
